@@ -25,6 +25,11 @@ public class Main {
         double precio = 100.0;
         double precioConIVA = calcularPrecioConIVA(precio);
         System.out.println("Precio con IVA: " + precioConIVA);
+
+        //este el ejericio numero tres
+        String[] textos = {"Hola", " ", "mundo", "!"};
+        String resultado = concatenarTextos(textos);
+        System.out.println("Resultado final: " + resultado);
     }
 
     public static double calcularPrecioConIVA(double precio) {
@@ -32,4 +37,13 @@ public class Main {
         double precioConIVA = precio + (precio * iva);
         return precioConIVA;
     }
+
+    public static String concatenarTextos(String[] textos){
+        String resultado = "";
+        for (String texto : textos) {
+            resultado += texto;
+        }
+        return resultado;
+    }
+
 }
