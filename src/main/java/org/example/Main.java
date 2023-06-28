@@ -3,6 +3,9 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println("HOLA SAMUEL");
+
+
         //Este el ejercicio numero uno
         System.out.println("Hello world!");
         // Imprimir los datos vistos en las sesiones
@@ -30,6 +33,15 @@ public class Main {
         String[] textos = {"Hola", " ", "mundo", "!"};
         String resultado = concatenarTextos(textos);
         System.out.println("Resultado final: " + resultado);
+
+        SmartPhone smartphone = new SmartPhone("Apple", "iPhone 12", 999.99, "iOS", 6);
+        SmartWatch smartwatch = new SmartWatch("Samsung", "Galaxy Watch 3", 249.99, "AMOLED", true);
+
+        System.out.println("Smartphone details:");
+        System.out.println(smartphone);
+
+        System.out.println("\nSmartwatch details:");
+        System.out.println(smartwatch);
     }
 
     public static double calcularPrecioConIVA(double precio) {
@@ -45,5 +57,9 @@ public class Main {
         }
         return resultado;
     }
+
+
+
+
 
 }
