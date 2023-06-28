@@ -2,6 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+
+        //Este el ejercicio numero uno
         System.out.println("Hello world!");
         // Imprimir los datos vistos en las sesiones
         int numeroEntero = 10;
@@ -18,5 +20,16 @@ public class Main {
 
         String texto = "Hola, mundo!";
         System.out.println("Texto: " + texto);
+
+        //este el ejercicio numero dos
+        double precio = 100.0;
+        double precioConIVA = calcularPrecioConIVA(precio);
+        System.out.println("Precio con IVA: " + precioConIVA);
+    }
+
+    public static double calcularPrecioConIVA(double precio) {
+        double iva = 0.21; // Valor del IVA (21%)
+        double precioConIVA = precio + (precio * iva);
+        return precioConIVA;
     }
 }
